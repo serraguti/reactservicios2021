@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App/App';
+import BuscadorCoches from './components/BuscadorCoches/BuscadorCoches';
 import BuscadorCustomer from './components/BuscadorCustomer/BuscadorCustomer';
+import MaestroDetalleDepartamentos from './components/MaestroDetalleDepartamentos/MaestroDetalleDepartamentos';
 import ServicioCustomers from './components/ServicioCustomers/ServicioCustomers';
 import './index.css';
 
@@ -10,7 +12,7 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <div className="App">
-      <BuscadorCustomer/>
+      <MaestroDetalleDepartamentos/>
     </div>
   </React.StrictMode>,
   document.getElementById('root')
