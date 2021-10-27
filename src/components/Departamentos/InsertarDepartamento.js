@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import Global from '../../Global';
+import { Redirect } from 'react-router';
 
 export default class InsertarDepartamento extends Component {
     cajanumeroRef = React.createRef();
@@ -33,6 +34,9 @@ export default class InsertarDepartamento extends Component {
     }
 
     render() {
+        if (this.state.status == true){
+            return (<Redirect to="/departamentos"/>);
+        }
         return (
             <div>
                 <h1>Nuevo departamento</h1>
